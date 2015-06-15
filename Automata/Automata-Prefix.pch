@@ -1,0 +1,29 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+
+#define gameBoardWidth 32
+#define gameBoardHeight 32
+
+#define tileSize 10
+#define food 10
+
+#define numberOfAnts 1024
+#define genes 32                // minimum size of state machine to solve problem
+
+#define max 200                 // minimum to solve problem
+#define maxGenerations 200      // minimum to solve problem?
